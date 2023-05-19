@@ -1,5 +1,14 @@
 package main
 
+import (
+	"fmt"
+
+	"github.com/enespolat24/go-auth/internal/config"
+	"github.com/enespolat24/go-auth/internal/db"
+)
+
 func main() {
-	println("Hello, World!")
+	config.GetConfig()
+	db := db.NewConnection()
+	fmt.Println(db)
 }
