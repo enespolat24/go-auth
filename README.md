@@ -1,1 +1,2 @@
-#an auth microservice made with go
+# go-auth
+an auth microservice made with go
